@@ -48,10 +48,16 @@ h3 {
 color:blue;
 }
 p {
-  font-size: 18px;
+  font-size: 30px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*this was amazing!*/
 
 section {
   padding: 100px 0;

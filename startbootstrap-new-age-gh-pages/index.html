@@ -72,6 +72,41 @@
           <h3>For the multiples of five say "Buzz"</h3>
           <br>
           <h3>For numbers which are multiples of both three and five say "FizzBuzz"</h3>
+<br>
+<br>
+      <H2> DEMO Below</h2>
+        <Label>...really more of an answer key</Label>
+        <br>
+        <br>
+          <p class="rainbow-text" id="para"> </p>
+        
+  
+
+  <script>
+  let pTag = document.getElementById("para");
+  
+  //for loop 0-100
+  for(i = 0; i <= 100; i++){
+    if( i % 3 === 0 && i % 5 == 0 )
+     pTag.innerHTML += "FIZZBUZZ";   //print fizzbuzz if multiple of 3 or 5;
+    
+      
+    else if( i % 3 == 0 )
+      pTag.innerHTML += "FIZZ";   //print fizz if multiple of 3
+    
+    
+     else if( i % 5 === 0 )
+       pTag.innerHTML += "BUZZ";  //print buzz if multiple of 5
+     
+    
+    else 
+        pTag.innerHTML += i;   //print the number for anything else
+    
+  
+  pTag.innerHTML +="<br>"  //adds a break each time the for loop runs
+  }
+  </script>
+          
           
         </div>
       </div>
